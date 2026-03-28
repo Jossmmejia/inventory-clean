@@ -116,7 +116,7 @@ while True:
 
             if choice.lower() == "y":
                 inventory = new_data
-                print("Inventory replaced\n")
+                print("✔ Inventory replaced\n")
             else:
                 for new_p in new_data:
                     existing = find_product(inventory, new_p["name"])
@@ -127,7 +127,7 @@ while True:
                     else:
                         inventory.append(new_p)
 
-                print("Inventory merged\n")
+                print("✔ Inventory merged\n")
 
     elif option == "9":
         print("Exiting...")
